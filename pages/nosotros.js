@@ -1,5 +1,11 @@
+import MasterPage from './../components/Master';
+
 const Nosotros = () => (
-    <p>Hola desde Nosotros</p>  
+    <MasterPage>
+        <div>
+            <p>Hola desde Nosotros</p> 
+        </div>
+    </MasterPage>
 )
 
 export default Nosotros;
