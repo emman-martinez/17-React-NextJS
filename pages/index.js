@@ -35,7 +35,8 @@ const Index = (props) => (
 
 Index.getInitialProps = async () => {
     const precio = await fetch('https://api.coinmarketcap.com/v2/ticker/1/');
-    const noticias = await fetch('https://newsapi.org/v2/everything?q=bitcoin&from=2019-05-22&sortBy=publishedAt&apiKey=36ab97c3f38b4a879b7259e94b29843e&language=es');
+    //const noticias = await fetch('https://newsapi.org/v2/everything?q=bitcoin&from=2019-05-22&sortBy=publishedAt&apiKey=36ab97c3f38b4a879b7259e94b29843e&language=es');
+    const noticias = await fetch('https://newsapi.org/v2/everything?q=bitcoin&sortBy=publishedAt&apiKey=6c1c1dfcb4a943c7bf481bc628b80153&language=es');
     const eventos = await fetch('https://www.eventbriteapi.com/v3/events/search/?token=M5FF6KD4C72VPBKWTY4N');
 
     const resPrecio = await precio.json();
